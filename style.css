@@ -1,0 +1,248 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* some variables */
+:root {
+  --primary-color: #a82c48;
+  --secondary-color: #43121d;
+  --third-color: #f98169;
+  --white-color: #fff;
+  --text-color: #555;
+  --text-gray: #999;
+  --blck-color: #000;
+  --primary-font: "Roboto", "san-serif";
+  --secondary-font: "Quicksand", "san-serif";
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--primary-font);
+  font-size: 100%;
+  font-weight: 400;
+}
+
+:active,
+:hover:focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--primary-color) !important;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+}
+/* ============================================ */
+/* -------------custome scrollbar------------- */
+/* ============================================ */
+
+::-webkit-scrollbar {
+  width: 0.625rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color);
+}
+
+/*------------ coustom css----------- */
+h1 {
+  font-size: 3rem;
+  font-weight: 900;
+  margin-bottom: 3rem;
+  color: var(--secondary-color);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  font-family: var(--secondary-font);
+  line-height: 3rem;
+}
+
+h4 {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+}
+
+h5 {
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--text-color);
+  font-weight: 400;
+  line-height: 1.75rem;
+  letter-spacing: 1px;
+}
+
+.main-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--white-color);
+  font-size: 0.935rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  transition: 0.4s ease-out;
+}
+
+.main-btn:hover {
+  background-color: transparent;
+  color: var(--primary-color);
+}
+
+.white-btn {
+  display: inline-block;
+  padding: 0.625rem 1.875rem;
+  background-color: var(--white-color);
+  border: 1px solid var(--white-color);
+  color: var(--text-color);
+  font-size: 0.935rem;
+  text-transform: capitalize;
+  font-weight: 600;
+  box-shadow: 0px 2px 10px -1px rgb(0 0 0 / 19%);
+  transition: 0.4s ease-out;
+}
+
+.white-btn:hover {
+  background-color: transparent;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+.wrapper {
+  padding-top: 8.25rem;
+  padding-bottom: 8.25rem;
+}
+
+.text-content {
+  width: 70%;
+  margin: auto;
+}
+
+.counter-section h2,
+.testimonial-section h2,
+.book-food-text h2 {
+  color: #fff;
+}
+
+/* =================================== */
+/* ---------------Header Design-------- */
+/* =================================== */
+.navigation-wrap {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  z-index: 4;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+  padding: 0 0.5rem;
+  transition: all 200ms linear;
+}
+
+.navbar-toggler:focus {
+  outline: unset;
+  border: unset;
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: var(--primary-color);
+  letter-spacing: 1px;
+}
+
+.navigation-wrap .main-btn {
+  padding: 0.3125rem 1.425rem;
+  box-shadow: none;
+  margin-left: 0.625rem;
+}
+
+.navigation-wrap.scroll-on {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--white-color);
+  box-shadow: 0 0.125rem 1.75rem 0 rgb(0, 0, 0, 0.09);
+  transition: all 0.4s ease-in-out;
+}
+
+/* ======================================= */
+/* ------------------Top banner------------ */
+
+.top-banner {
+  width: 100;
+  background-image: url("./images/bg/bg-1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 16.875rem 0 9.375rem;
+}
+
+/* ======================================= */
+/* -------------counter section---------- */
+.counter-section {
+  background-color: var(--primary-color);
+  padding: 2.5rem 0;
+}
+
+.counter-section p {
+  color: var(--white-color);
+  text-transform: uppercase;
+}
+
+/* ========================================== */
+/* ------------------about section-------------- */
+.about-section {
+  background-color: #fff;
+}
+
+.about-section .card,
+.about-section .card img {
+  border-radius: 0.625rem;
+}
+
+.about-section .text-sec {
+  padding-left: 2rem;
+}
