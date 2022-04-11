@@ -376,6 +376,7 @@ p {
 }
 .newsletter button {
   margin-top: 20px;
+  width: 300%;
 }
 .newsletter .form-control {
   height: 3.225rem;
