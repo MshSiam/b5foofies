@@ -19,20 +19,37 @@
   .top-banner {
     padding: 9.375rem 0 9.375rem;
   }
+
+  /* explore food */
+  .explore-food card {
+    margin-top: -100px;
+    margin-bottom: -100px;
+  }
 }
 
 @media (max-width: 767px) {
   /* custome css */
   h1 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
   h2 {
-    font-size: 2rem;
+    font-size: 1.7rem;
     line-height: 2.0625rem;
   }
 
   /* top banner */
   .top-banner {
     padding: 10.875rem 0 9.375rem;
+  }
+
+  /* story section */
+  .story-section {
+    height: auto;
+    padding: 3rem 0;
+  }
+  /* explore food */
+  .explore-food card {
+    margin-top: -100px;
+    margin-bottom: -100px;
   }
 }
